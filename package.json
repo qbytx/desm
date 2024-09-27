@@ -6,13 +6,11 @@
   "typings": "index.d.ts",
   "type": "module",
   "exports": {
-    "import": "./dist/esm/index.mjs",      
+    "import": "./dist/esm/index.mjs",
     "require": "./dist/cjs/index.cjs"
   },
   "scripts": {
-    "test": "node test.js",
-    "build:cjs": "babel ./index.js --out-file ./dist/cjs/index.js --config-file ./babel.config.cjs.json",
-    "build:esm": "babel ./index.js --out-file ./dist/esm/index.js --config-file ./babel.config.esm.json"
+    "test": "node test.js"
   },
   "repository": {
     "type": "git",
@@ -32,9 +30,6 @@
   },
   "homepage": "https://github.com/mcollina/desm#readme",
   "devDependencies": {
-    "@babel/cli": "^7.25.6",
-    "@babel/core": "^7.25.2",
-    "@babel/preset-env": "^7.25.4",
     "tape": "^5.5.3"
   }
 }
