@@ -4,13 +4,14 @@
   "description": "get the file directory from import.meta.url",
   "main": "./dist/esm/index.mjs",
   "typings": "index.d.ts",
-  "type": "module",
+  "type": "commonjs",
   "exports": {
     "import": "./dist/esm/index.mjs",      
     "require": "./dist/cjs/index.cjs"
   },
   "scripts": {
     "test": "node test.js",
+    "test-cjs": "node test-cjs.js",
     "build:cjs": "babel ./index.js --out-file ./dist/cjs/index.js --config-file ./babel.config.cjs.json",
     "build:esm": "babel ./index.js --out-file ./dist/esm/index.js --config-file ./babel.config.esm.json"
   },
